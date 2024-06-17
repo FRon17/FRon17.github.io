@@ -1,0 +1,563 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>AfterLife Museum</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="static/js/echarts.min.js"></script>
+	<!-- Google font (font-family: 'Ubuntu', sans-serif;) -->
+	<link href="static/css/css.css" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/plugins.css">
+	<link rel="stylesheet" href="static/css/style.css">
+
+	<!-- Cusom css -->
+   <link rel="stylesheet" href="static/css/custom.css">
+
+	<!-- Modernizer js -->
+	<script src="static/js/modernizr-3.5.0.min.js"></script>
+</head>
+<body>
+	<!--[if lte IE 9]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience and security.</p>
+	<![endif]-->
+
+	<div class="fakeloader"></div>
+
+	<!-- START WRAPPER -->
+	<div class="wrapper">
+
+		<!-- START HEADER AREA -->
+		<header id="header-area" class="header-area">
+			<div class="header bg--white">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-12 order-3 col-lg-5 order-lg-1 col-md-12 col-sm-12 order-md-3 order-sm-3">
+							<!-- START MAIN NAVIGATION -->
+							<nav class="navbar navbar-expand-lg menu">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="ti ti-menu"></span>
+								</button>
+								<div class="collapse navbar-collapse" id="main-navbar">
+									<ul class="navbar-nav mr-auto">
+										<li class="nav-item"><a class="nav-link" href="index.html">主页</a></li>
+										<li class="nav-item"><a class="nav-link" href="about-us.html">丧葬流程</a></li>
+										<li class="nav-item"><a class="nav-link" href="portfolio.html">物件陈列馆</a></li>
+										<li class="nav-item"><a class="nav-link" href="blog-list.html">我们想说...</a></li>
+										<li class="nav-item"><a class="nav-link" href="contact.html">结语</a></li>
+									</ul>
+								</div>
+							</nav><!-- END MAIN NAVIGATION -->
+						</div>
+						<div class="col-6 order-2 col-lg-2 order-lg-2 offset-lg-0 col-md-2 offset-md-5 order-md-1 col-sm-2 offset-sm-5 order-sm-1">
+						</div>
+						<div class="col-12 order-1 col-lg-5 order-lg-3 col-md-5 col-sm-5 order-md-2 order-sm-2">
+							<div class="logo text-right">
+								<a href="index.html"><img src="static/picture/logo-1.png" alt="logo"></a>
+							</div>
+						</div>
+						<div class="col-12 order-1 col-lg-5 order-lg-3 col-md-5 col-sm-5 order-md-2 order-sm-2">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header><!-- END HEADER AREA -->
+
+		<!-- START BREADCRUMB AREA -->
+		<div class="breadcrumb-area" data-black-overlay="7">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="pt-breadcrumb text-center ptb-110">
+							<h4>虽然死亡从来不是一个轻松的话题。但如今有越来越多的年轻人，不再避讳谈论这个话题，开始认真思考这件事。</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- END BREADCRUMB AREA -->
+
+		<!-- START MAIN CONTENT -->
+		<main class="main-content">
+
+			<!-- START BLOG LIST PAGE CONTENT -->
+			<div class="blog-list ptb-120 bg--light-grey">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+							<div class="blog-list-blogs no-margin">
+
+								<!-- START SINGLE BLOG 1-->
+								<div class="blog">
+									<div class="blog__thumbnail">
+										<h3 class="blog__content__title">一、轻松地谈论死亡</h3>
+										<div id="main1" style="width: 100%; height: 400px; align:center;"></div>
+											<script type="text/javascript">
+												// 基于准备好的dom，初始化echarts实例
+												var myChart = echarts.init(document.getElementById('main1'));
+
+												// 指定图表的配置项和数据
+												var option = {
+													title: {
+														text: '年轻人最愿意和谁谈论死亡'
+													},
+													  series: [
+													    {
+													      type: 'pie',
+													      data: [
+													        {
+													          value: 392,
+													          name: '朋友39.2%'
+													        },
+													        {
+													          value: 275,
+													          name: '父母及亲人27.5%'
+													        },
+													        {
+													          value: 189,
+													          name: '伴侣18.9%'
+													        },
+													        {
+													          value: 70,
+													          name: '陌生人7.0%'
+													        },
+													        {
+													          value: 74,
+													          name: '没讨论过7.4%'
+													        }
+													      ],
+													      roseType: 'area'
+													    }
+													  ]
+													};
+
+												// 使用刚指定的配置项和数据显示图表。
+												myChart.setOption(option);
+
+										    // 监听窗口大小变化，自动调整图表大小
+										    window.addEventListener('resize', function() {
+										      myChart.resize();
+										    });
+											</script>
+									</div>
+									<div class="blog__content">
+										<h5>年轻人对死亡最初的印象
+											通常来自于电影、电视剧中关于死亡的情节或是名人去世的新闻报道。
+											然而，真正对死亡有感触的时刻可能是在家中为长辈送别的葬礼上。
+											面对亲人的离世
+											年轻人很难避免思考死亡的本质是什么。
+											事实上
+											<b>有七成的年轻人曾与朋友讨论过死亡，超过五成的年轻人曾与父母倾诉过相关的思考和感受。</b></h5>
+											<div id="main2" style="width: 100%; height: 400px; align:center;"></div>
+												<script type="text/javascript">
+													// 基于准备好的dom，初始化echarts实例
+													var myChart = echarts.init(document.getElementById('main2'));
+
+													// 指定图表的配置项和数据
+													var option = {
+														  title: {
+														    text: '生前规划中，年轻人考虑的事情'
+														  },
+														  tooltip: {
+														    trigger: 'item',
+														    formatter: '{a} <br/>{b} : {c}%'
+														  },
+
+
+														  series: [
+														    {
+														      name: '选择该项人数占比',
+														      type: 'funnel',
+														      left: '10%',
+														      top: 60,
+														      bottom: 60,
+														      width: '80%',
+														      min: 0,
+														      max: 100,
+														      minSize: '0%',
+														      maxSize: '100%',
+														      sort: 'descending',
+														      gap: 2,
+														      label: {
+														        show: true,
+														        position: 'inside'
+														      },
+														      labelLine: {
+														        length: 10,
+														        lineStyle: {
+														          width: 1,
+														          type: 'solid'
+														        }
+														      },
+														      itemStyle: {
+														        borderColor: '#fff',
+														        borderWidth: 1
+														      },
+														      emphasis: {
+														        label: {
+														          fontSize: 20
+														        }
+														      },
+														      data: [
+																		{ value: 20.3, name: '规划告别仪式' },
+																		{ value: 20.2, name: '骨灰盒' },
+																		{ value: 29.6, name: '葬礼规模' },
+														        { value: 34.5, name: '自选墓志铭' },
+														        { value: 42.4, name: '选择丧葬地点' },
+														        { value: 45, name: '自选遗照' },
+														        { value: 60.9, name: '选择丧葬方式' },
+														        { value: 71.8, name: '订立遗嘱' }
+														      ]
+														    }
+														  ]
+														};
+
+													// 使用刚指定的配置项和数据显示图表。
+													myChart.setOption(option);
+
+													// 监听窗口大小变化，自动调整图表大小
+											    window.addEventListener('resize', function() {
+											      myChart.resize();
+											    });
+												</script>
+             					<p> </p>
+											<h5>可以确定的是，
+												对于他们而言，
+												“死亡”不再是避之不及的禁忌话题。
+												更多的人不但不避讳讨论丧葬，
+												甚至会认真思考自己的身后事，
+												他们并不希望自己的最后时刻由他人决定。
+												</h5>
+									</div>
+								</div><!-- END SINGLE BLOG -->
+
+								<!-- START SINGLE BLOG 2-->
+								<div class="blog">
+									<div class="blog__thumbnail">
+										<h3 class="blog__content__title">二、不同的告别仪式</h3>
+										<div id="main3" style="width: 100%; height: 400px; align:center;"></div>
+											<script type="text/javascript">
+												// 基于准备好的dom，初始化echarts实例
+												var myChart = echarts.init(document.getElementById('main3'));
+
+												// 指定图表的配置项和数据
+												var option = {
+										  title: [
+										    {
+										      text: '年轻人眼中传统葬礼习俗的缺点'
+										    }
+										  ],
+										  polar: {
+										    radius: [30, '80%']
+										  },
+										  angleAxis: {
+										    max: 75,
+										    startAngle: 75
+										  },
+										  radiusAxis: {
+										    type: 'category',
+										    data: ['严重扰民', '严重污染', '封建落后', '繁文缛节',"大操大办"]
+										  },
+										  tooltip: {},
+										  series: {
+										    type: 'bar',
+										    data: [38.3, 48.6, 50.8, 58.8, 66.7],
+										    coordinateSystem: 'polar',
+										    label: {
+										      show: true,
+										      position: 'middle',
+										      formatter: '{b}: {c}'
+										    }
+										  }
+										};
+
+												// 使用刚指定的配置项和数据显示图表。
+												myChart.setOption(option);
+
+												// 监听窗口大小变化，自动调整图表大小
+										    window.addEventListener('resize', function() {
+										      myChart.resize();
+										    });
+											</script>
+									</div>
+									<div class="blog__content">
+										<h5>当一个人离开了人世，
+											他的葬礼便是他与这个世界的告别。
+											传统的丧葬习俗虽然有着对历史文化的传承，但是在当代年轻人眼中，
+											有些习俗已经变味，空留下形式。</h5>
+											<div id="main4" style="width: 100%; height: 400px; align:center;"></div>
+											    <script type="text/javascript">
+											      // 基于准备好的dom，初始化echarts实例
+											      var myChart = echarts.init(document.getElementById('main4'));
+
+											      // 指定图表的配置项和数据
+											      var option = {
+															title: {
+																text: '年轻人最愿意和谁谈论死亡'
+															},
+											  series: [
+											    {
+											      type: 'treemap',
+											      data: [
+											        {
+											          name: '理想出席对象',
+											          value: 190.4,
+											          children: [
+											            {
+											              name: '亲人',
+											              value: 100
+											            },
+											            {
+											              name: '朋友',
+											              value: 90.4
+											            }
+											          ]
+											        },
+
+											                {
+											          name: '想要拥有的元素',
+											          value: 95,
+											          children: [
+											            {
+											              name: '视频',
+											              value: 32.6
+											            },
+											            {
+											              name: '音乐',
+											              value: 24.1
+											            },
+											            {
+											              name: '照片',
+											              value: 17.1
+											            },
+											            {
+											              name: '鲜花',
+											              value: 13
+											            },
+											            {
+											              name: '故事',
+											              value: 8.2
+											            }
+											          ]
+											        },
+
+											                {
+											          name: '想实现的气氛',
+											          value: 67.7,
+											          children: [
+											            {
+											              name: '不要悲伤',
+											              value: 25.6
+											            },
+											            {
+											              name: '安静',
+											              value: 13.8
+											            },
+											            {
+											              name: '开开心心',
+											              value: 13.2
+											            },
+											            {
+											              name: '像婚礼一样',
+											              value: 6.6
+											            },
+											            {
+											              name: '聚会',
+											              value: 8.5
+											            }
+											          ]
+											        },
+
+											                {
+											          name: '想选的地点',
+											          value: 26.7,
+											          children: [
+											            {
+											              name: '山上',
+											              value: 10.6
+											            },
+											            {
+											              name: '海边',
+											              value: 10.4
+											            },
+											            {
+											              name: '草坪',
+											              value: 5.7
+											            }
+											          ]
+											        },
+
+											      ]
+											    }
+											  ]
+											};
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+
+			// 监听窗口大小变化，自动调整图表大小
+			window.addEventListener('resize', function() {
+				myChart.resize();
+			});
+    </script>
+             					<p> </p>
+
+											<h5>他们并不在意葬礼的规模，
+												想要的只是一场毫无遗憾的、体面的告别。
+												在年轻人的眼中，“理想中的葬礼”应该是轻松的，出席葬礼的大家也千万不要悲伤。</h5>
+									</div>
+
+								</div><!-- END SINGLE BLOG -->
+
+								<!-- START SINGLE BLOG 3-->
+								<div class="blog">
+									<div class="blog__thumbnail">
+										<h3 class="blog__content__title">三、希望被这样纪念</h3>
+										<div id="main5" style="width: 100%; height: 400px; align:center;"></div>
+											<script type="text/javascript">
+												// 基于准备好的dom，初始化echarts实例
+												var myChart = echarts.init(document.getElementById('main5'));
+
+												// 指定图表的配置项和数据
+												var option = {
+										  title: {
+										    text: '年轻人希望被这样纪念'
+										  },
+										  tooltip: {
+										    trigger: 'axis',
+										    axisPointer: {
+										      type: 'shadow'
+										    }
+										  },
+										  grid: {
+										    top: 80,
+										    bottom: 30
+										  },
+										  xAxis: {
+										    type: 'value',
+										    position: 'top',
+										    splitLine: {
+										      lineStyle: {
+										        type: 'dashed'
+										      }
+										    }
+										  },
+										  yAxis: {
+										    type: 'category',
+										    axisLine: { show: false },
+										    axisLabel: { show: false },
+										    axisTick: { show: false },
+										    splitLine: { show: false },
+										    data: [
+										      '其他',
+										      '集体公祭',
+										      '赛博扫墓',
+										      '传统扫墓烧纸',
+										      '家族追思会',
+										      '植树祭奠',
+										      '鲜花代替烧纸',
+										      '无需祭祀'
+										    ]
+										  },
+										  series: [
+										    {
+										      name: '选项占比（绝对值）',
+										      type: 'bar',
+										      stack: 'Total',
+										      label: {
+										        show: true,
+										        formatter: '{b}'
+										      },
+													data: [
+													        -7.8,
+													        4.5,
+													        -8.7,
+													        13.1,
+													        -14.5,
+													        26.7,
+													        -32.5,
+													        37.1
+													      ]
+										    }
+										  ]
+										};
+
+												// 使用刚指定的配置项和数据显示图表。
+												myChart.setOption(option);
+												// 监听窗口大小变化，自动调整图表大小
+										    window.addEventListener('resize', function() {
+										      myChart.resize();
+										    });
+											</script>
+									</div>
+									<div class="blog__content">
+										<h5>当面对自己的死亡时，
+											坚持“死后如烟”的年轻人，对自己身后的祭祀并不太在意。
+											在年轻人的眼中，
+											传统的祭祀手段非常不环保，虽然可以理解但也确实没有必要。
+											“烧纸就不用了，不妨带一束花”</h5>
+									</div>
+								</div><!-- END SINGLE BLOG -->
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- END BLOG LIST PAGE CONTENT -->
+
+		</main><!-- END MAIN CONTENT -->
+
+
+		<!-- START FOOTER AREA -->
+		<footer id="footer" class="footer-area bg--dark-grey ptb-50">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="footer">
+							<div class="footer__copyright">
+								<div class="logo">
+									<a href="index.html"><img src="static/picture/logo-2.png" alt="footer logo"></a>
+								</div>
+								<p class="footer__copyright__text">Create &copy; 2024.AfterLife Studio reserved.</p>
+							</div>
+							<nav class="footer__menu text-center">
+								<ul>
+									<li><a href="index.html">主页</a></li>
+									<li><a href="about-us.html">丧葬流程</a></li>
+									<li><a href="portfolio.html">物件陈列馆</a></li>
+									<li><a href="blog-list.html">我们想说...</a></li>
+									<li><a href="contact.html">结语</a></li>
+								</ul>
+							</nav>
+							<div class="footer__contact">
+								<ul>
+									<li>Email :<a href="mailto:202218093035@cuc.edu.cn"> 202218093035@cuc.edu.cn</a></li>
+									<li>Phone :<a href="javascript:;"> (+00) 2535 01</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer><!-- END FOOTER AREA -->
+
+	</div><!-- END WRAPPER -->
+
+
+
+	<!-- JS Files -->
+	<script src="static/js/jquery-3.2.1.min.js"></script>
+	<script src="static/js/popper.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+	<script src="static/js/plugins.js"></script>
+	<script src="static/js/active.js"></script>
+	<script src="static/js/scripts.js"></script>
+
+
+</body>
+</html>
